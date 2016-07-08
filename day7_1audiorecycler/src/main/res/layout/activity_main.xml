@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gaojunhui.day7_1audiorecycler.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="#ffffcc">
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:text="00:00"
+            android:layout_below="@+id/seekBar"
+            android:layout_alignRight="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_tv_progress"
+            android:text="00:00"
+            android:layout_below="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_name_bottom"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/bt_back"
+            android:onClick="onClick"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="60dp"
+             />
+
+        <!--<Button-->
+            <!--android:id="@+id/bt_play"-->
+            <!--android:onClick="onClick"-->
+            <!--android:layout_alignBaseline="@+id/bt_back"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="点击播放" />-->
+
+        <ImageView
+            android:id="@+id/bt_go"
+            android:onClick="onClick"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/go"
+            android:layout_alignParentRight="true"
+            />
+        <ImageView
+            android:id="@+id/bt_stop"
+            android:onClick="onClick"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>
